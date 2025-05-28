@@ -5,11 +5,13 @@ df = pd.read_csv(url)
 
 # 데이터 확인
 print(df.head())
+
 import plotly.express as px
 
 # 예: x = '날짜', y = '값', color = '카테고리'
 fig = px.line(df, x='날짜', y='값', color='카테고리', title='카테고리별 값 변화')
 fig.show()
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
